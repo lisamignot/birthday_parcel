@@ -1,0 +1,94 @@
+@use 'variables';
+
+.infos {
+    padding: 50px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        justify-content: space-around;
+    }
+
+    &--day {
+        background-image: linear-gradient(variables.$firstColor, variables.$blue);
+    }
+
+    &--location {
+        .container {
+            flex-direction: row-reverse;
+        }
+
+        background-image: linear-gradient(variables.$blue, variables.$orange);
+    }
+
+    &__details {
+        
+        &__title {
+            font-size: 20px;
+            padding-bottom: 18px;
+            text-decoration: overline;
+            font-family: "Kalam", cursive;
+        }
+
+        &__text {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        &__maps {
+            text-decoration: none;
+            color: variables.$highlightColor;
+            display: flex;
+            justify-content: center;
+
+            &:hover {
+                font-weight: bold;
+            }
+
+            p {
+                padding-left: 8px;
+            }
+        }
+    }
+
+    &__image {
+        max-width: 550px;
+        width: 90%;
+    }
+
+    @media (max-width: 640px) {
+        padding: 60px 0 0;
+
+        .container {
+            display: block;
+        }
+
+        &__details {
+            &__title {
+                font-size: 16px;
+            }
+
+            &__text {
+                font-size: 12px;
+            }
+            
+            &__maps {
+                font-size: 12px;
+                display: block;
+            }
+        }
+
+        &__image {
+            margin-top: 24px;
+            margin-bottom: 32px;
+        }
+    }
+    
+    @media (max-width: 1024px) {
+        &__image {
+            max-width: 380px;
+        }
+    }
+}
+

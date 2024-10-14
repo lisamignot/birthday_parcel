@@ -1,4 +1,8 @@
+@use 'variables';
 @use 'hero';
+@use 'infos';
+@use 'confirmation';
+
 
 * {
     margin: 0;
@@ -10,14 +14,10 @@
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: variables.$secondaryFont;
     text-align: center;
 
     @media (max-width: 640px) {
-        max-width: 80%;
-    }
-
-    @media (max-width: 1024px) {
         max-width: 90%;
     }
 }

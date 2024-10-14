@@ -7,8 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
@@ -18,7 +20,44 @@
                 <span id="contador">xxd xxh xxxm xxs</span></p>
         </div>
     </header>
+    <section class="infos infos--day">
+        <div class="container" data-aos="fade-left" data-aos-duration="2000">
+            <!--DIA-->
+            <div class="infos__details"> 
+                <h2 class="infos__details__title">Dia da Festa</h2>
+                <p class="infos__details__text">Domingo, dia <b>23/03/2025</b></p>
+            </div>
+            <img class="infos__image" src="images/image_1.png" alt="ilustração de três personagens e um bolo de aniversário">
+        </div>
+    </section>
+            <!--LOCAL-->
+    <section class="infos infos--location">
+        <div class="container" data-aos="fade-right" data-aos-duration="2000">
+            <div class="infos__details">
+                <h2 class="infos__details__title">Local da Festa</h2>
+                <p class="infos__details__text">A festa será na <b>Rua das Estrelas, 123 - Bairro dos Sonhos, Cidade da Alegria - RJ</b></p>
+                <a class="infos__details__maps" href="https://www.google.com/maps" target="_blank">
+                    <img src="images/map-pin.svg" alt="icone pin">
+                    <p>Como chegar</p>
+                </a>
+            </div>
+            <img class="infos__image" src="images/image_2.png" alt="ilustração com 4 personagens comemorando">
+        </div>
+    </section>
+    <!--CONFIRMAÇÃO-->
+    <section class="confirmation confirmation--gradient">
+        <div class="container" data-aos="zoom-in" data-aos-duration="2000">
+            <img class="confirmation__image" src="images/image_3.png" alt="ilustração com cinco personagens e um cachorro comtemática de aniversário">
+            <div class="confirmation__content">
+                <p class="confirmation__content__text">
+                    <b>Espero ver você lá para compartilhar momentos especiais e muita diversão!</b>
+                </p>
+                <button class="confirmation__content__button">Confirme sua presença!</button>
+            </div>
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

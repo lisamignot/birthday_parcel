@@ -1,0 +1,65 @@
+@use 'variables';
+
+.confirmation {
+    .container {
+        position: relative;
+        font-family: "Kalam", cursive;
+    }
+
+    &--gradient {
+        background-image: linear-gradient(variables.$orange, variables.$creme);
+    }
+
+
+    &__image {
+        width: 100%;
+        position: relative;
+        opacity: .6;
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-15%, -50%);
+    
+
+        &__text {
+            font-size: 24px;
+            text-shadow: white 1px 1px;
+        }
+
+        &__button {
+            padding: 18px;
+            margin-top: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: variables.$buttonColor;
+            border-radius: 10px;
+            color: variables.$firstColor;
+            font-weight: bold;
+            border: none;
+
+            &:hover {
+                background-color: variables.$buttonHoverColor;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        &__content {
+            
+            
+            &__text {             
+                font-size: 16px;
+            }
+
+            &__button {
+                padding: 8px;
+                font-size: 12px;
+                white-space: nowrap;
+                margin-top: 8px;
+            }
+        }   
+    }
+}
